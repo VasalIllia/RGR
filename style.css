@@ -8,6 +8,8 @@ header {
     background-color: #fff;
     z-index: 2;
     top: 0;
+    width: 100%;
+    height: auto;
 }
 main{
     display:flex;
@@ -182,5 +184,8 @@ text-decoration: underline;
     main section{
         display: flex;
         flex-direction: column;
+    }
+    .food-card{
+        max-width: 600px;
     }
 }
