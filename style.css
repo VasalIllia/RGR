@@ -56,7 +56,7 @@ header img {
     border-radius: 5px;
     text-decoration: none;
     cursor: pointer;
-    line-height: 2.5em;
+    line-height: 2em;
 }
 
 .mobile {
@@ -113,6 +113,7 @@ header img {
     height: auto;
     padding: 20px;
     margin-bottom: 40px;
+    transition: all 0.5s cubic-bezier(0.42, 0, 0.33, 1) 0s;
 }
 
 .food-card img {
@@ -125,12 +126,10 @@ header img {
     height: auto;
     font-weight: bold;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .food-card p {
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 10px;
 }
 
@@ -141,11 +140,14 @@ header img {
     color: #fff;
     border: 0px;
     border-radius: 25px;
-
 }
 
 .food-card input[type="submit"]:hover {
     background-color: #234988;
+}
+.food-card:hover{
+    box-shadow: 0px 0px 34px 0px rgba(0,0,0,0.75);
+    transform: scale(1.01);
 }
 
 .food-card:nth-child(4)::before,
@@ -211,6 +213,11 @@ header img {
 
     .food-card {
         max-width: 700px;
+    }
+    .food-card h3{
+        font-size: 30px;
+    }
+    .food-card p {
         font-size: 25px;
     }
 
