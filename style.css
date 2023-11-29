@@ -157,7 +157,7 @@ text-decoration: underline;
     box-shadow: -5px 4px  rgba(255, 63, 15, 0.664)
 }
 
-@media all and (max-device-width: 960px) {
+@media all and (min-device-width: 960px) {
     main section{
         display: block;
         column-count: 2;
@@ -169,7 +169,7 @@ text-decoration: underline;
     }
 }
 
-@media all and (max-device-width: 768px) {
+@media all and (min-device-width: 768px) {
     .desktop-tablet{
         display: none;
     }
@@ -186,6 +186,7 @@ text-decoration: underline;
         flex-direction: column;
     }
     .food-card{
-        max-width: 600px;
+        max-width: 700px;
+        font-size: 25px;
     }
 }
