@@ -10,21 +10,23 @@ header {
     top: 0;
     font-size: 20px;
 }
-main section{
+
+main section {
     width: 100%;
     height: auto;
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content:space-around;
-    margin:20px 10px;
+    justify-content: space-around;
+    margin: 20px 10px;
     gap: 20px;
 }
+
 header img {
     width: 100%;
     max-width: 100px;
-    height: auto; 
+    height: auto;
     border-radius: 50%;
 }
 
@@ -33,13 +35,15 @@ header img {
     margin: 15px 10px;
 }
 
-.desktop-tablet-nav a , .mobile-nav a{
+.desktop-tablet-nav a,
+.mobile-nav a {
     color: #333;
     font-weight: bold;
     cursor: pointer;
     text-decoration: none;
 }
-.desktop-tablet{
+
+.desktop-tablet {
     display: flex;
     align-items: center;
 }
@@ -52,30 +56,38 @@ header img {
     border-radius: 5px;
     text-decoration: none;
     cursor: pointer;
+    line-height: 2.5em;
 }
-.mobile{
+
+.mobile {
     display: none;
     margin: 10px 10px;
 }
-#checkbox{
+
+#checkbox {
     display: none;
 }
-.toggle:checked + .menu-btn + .mobile-nav{
+
+.toggle:checked+.menu-btn+.mobile-nav {
     display: block;
 }
-.menu-btn{
+
+.menu-btn {
     font-size: 35px;
 }
+
 .mobile-nav ul {
     list-style-type: none;
     padding-right: 10px;
     padding-left: 10px;
 }
-.mobile-nav li{
+
+.mobile-nav li {
     margin: 10px 10px;
 }
-.mobile-nav{
-    display:none;
+
+.mobile-nav {
+    display: none;
     position: absolute;
     right: 10px;
     background-color: #fff;
@@ -83,12 +95,13 @@ header img {
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-.mobile-nav li:hover, 
-.desktop-tablet-nav li:hover
-{
-text-decoration: underline;
+
+.mobile-nav li:hover,
+.desktop-tablet-nav li:hover {
+    text-decoration: underline;
 }
-.login-button:hover{
+
+.login-button:hover {
     background-color: #234988;
 }
 
@@ -101,10 +114,12 @@ text-decoration: underline;
     padding: 20px;
     margin-bottom: 40px;
 }
+
 .food-card img {
     width: 100%;
     height: auto;
 }
+
 .food-card h3 {
     width: 100%;
     height: auto;
@@ -113,25 +128,28 @@ text-decoration: underline;
     margin-left: auto;
     margin-right: auto;
 }
+
 .food-card p {
     font-size: 25px;
     margin-bottom: 10px;
 }
+
 .food-card input[type="submit"] {
     width: 100%;
     height: 50px;
     background-color: #4285f4;
     color: #fff;
-    border:0px;
-    border-radius: 25px ;
-    
+    border: 0px;
+    border-radius: 25px;
+
 }
+
 .food-card input[type="submit"]:hover {
     background-color: #234988;
 }
+
 .food-card:nth-child(4)::before,
-.food-card:nth-child(5)::before
-{
+.food-card:nth-child(5)::before {
     content: "New";
     background: rgb(255, 63, 15);
     border-radius: 50%;
@@ -146,15 +164,16 @@ text-decoration: underline;
     border: 4px solid #ffffff;
     transform: rotate(-35deg);
     margin: -50px -50px;
-    box-shadow: -5px 4px  rgba(255, 63, 15, 0.664)
+    box-shadow: -5px 4px rgba(255, 63, 15, 0.664)
 }
 
 @media all and (max-device-width: 960px) {
-    main section{
+    main section {
         display: block;
         column-count: 2;
     }
-    .food-card{
+
+    .food-card {
         break-inside: avoid;
         margin-left: auto;
         margin-right: auto;
@@ -162,43 +181,52 @@ text-decoration: underline;
 }
 
 @media all and (max-device-width: 768px) {
-    .desktop-tablet{
+    .desktop-tablet {
         display: none;
     }
-    .mobile{
+
+    .mobile {
         display: block;
         order: 1;
     }
-    header a{
+
+    header a {
         margin-right: 10px;
-        margin-left:auto;
+        margin-left: auto;
+        vertical-align: middle;
     }
-    header img{
+
+    header img {
         max-width: 150px;
     }
-    header{
+
+    header {
         font-size: 30px;
     }
-    main section{
+
+    main section {
         display: flex;
         flex-direction: column;
     }
-    .food-card{
+
+    .food-card {
         max-width: 700px;
         font-size: 25px;
     }
+
     .food-card input[type="submit"] {
         height: 70px;
         font-size: 25px;
     }
+
     .food-card:nth-child(4)::before,
-.food-card:nth-child(5)::before
-{
-    width: 120px;
-    height: 120px;
-    font-size: 35px;
-}
-.menu-btn{
-    font-size: 60px;
-}
+    .food-card:nth-child(5)::before {
+        width: 120px;
+        height: 120px;
+        font-size: 35px;
+    }
+
+    .menu-btn {
+        font-size: 80px;
+    }
 }
