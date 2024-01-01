@@ -275,7 +275,7 @@ main{
         font-size: 30px;
     }
 
-    main section {
+    main .food-card-section {
         display: flex;
         flex-direction: column;
     }
@@ -304,6 +304,23 @@ main{
 
     .menu-btn {
         font-size: 80px;
+    }
+    #about-us h2{
+        font-size: 30px;
+    }
+    #about-us p{
+        font-size: 25px;
+    }
+    #menu h2{
+        font-size: 30px;
+    }
+    #menu nav ul li a{
+        font-size: 25px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    #footer{
+        font-size: 25px
     }
 }
 #footer{
